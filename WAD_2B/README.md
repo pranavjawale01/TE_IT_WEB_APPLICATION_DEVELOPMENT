@@ -13,6 +13,8 @@ To create a Docker container environment using NVIDIA Docker or any other Docker
     This Dockerfile specifies a Node.js Alpine image as the base, copies the contents of your project directory into a directory named `test` inside the container, and then runs the `test.js` file using Node.js when the container starts.
 
 3. **Steps**: To execute docker
+
+    ```
     PS C:\Users\HP\OneDrive\Desktop\PRACTICAL\WAD\WAD_2B\test> docker --version   
     Docker version 26.0.0, build 2ae903e
     PS C:\Users\HP\OneDrive\Desktop\PRACTICAL\WAD\WAD_2B\test> node --version     
@@ -39,9 +41,15 @@ To create a Docker container environment using NVIDIA Docker or any other Docker
 
     What's Next?
     View a summary of image vulnerabilities and recommendations → docker scout quickview
+    ```
+
+    ```
     PS C:\Users\HP\OneDrive\Desktop\PRACTICAL\WAD\WAD_2B\test> docker images
     REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
     test         latest    c8d07391aaf7   9 minutes ago   148MB
+    ```
+
+    ```
     PS C:\Users\HP\OneDrive\Desktop\PRACTICAL\WAD\WAD_2B\test> docker ps
     CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-    PS C:\Users\HP\OneDrive\Desktop\PRACTICAL\WAD\WAD_2B\test> 
+    ```
