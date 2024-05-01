@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+  }
+  .container {
+    margin-top: 50px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  .card-body {
+    background-color: #fff;
+  }
+  .field {
+    font-weight: bold;
+  }
+  .value {
+    color: #007bff;
+  }

@@ -1,0 +1,36 @@
+form {
+    padding: 20px;
+    background-color: lavender;
+    border: 2px solid rgb(141, 141, 202);
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #825fc2; /* Change to the desired color */
+    border-color: #6c62c4; /* Change to match the background color */
+}
+
+.btn-primary:hover {
+    background-color: #675dc0; /* Change to the desired hover color */
+    border-color: #7962ce; /* Change to match the hover background color */
+}
+
+/* Styles for College Admission Form */
+
+.container {
+    margin-top: 50px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+/* Additional Custom Styles Here */

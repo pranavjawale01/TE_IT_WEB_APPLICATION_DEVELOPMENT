@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css\display.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 text-center">Thank You for Registering!</h1>
+    <div class="card">
+      <div class="card-header">
+        Personal Information
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="field">First Name:</p>
+            <p class="value" id="fname"></p>
+          </div>
+          <div class="col-md-4">
+            <p class="field">Middle Name:</p>
+            <p class="value" id="mname"></p>
+          </div>
+          <div class="col-md-4">
+            <p class="field">Last Name:</p>
+            <p class="value" id="lname"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="field">Email:</p>
+            <p class="value" id="email"></p>
+          </div>
+          <div class="col-md-4">
+            <p class="field">Date of Birth:</p>
+            <p class="value" id="dob"></p>
+          </div>
+          <div class="col-md-4">
+            <p class="field">Date of Admission:</p>
+            <p class="value" id="doa"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="field">Gender:</p>
+            <p class="value" id="gender"></p>
+          </div>
+          <div class="col-md-4">
+            <p class="field">Department:</p>
+            <p class="value" id="deptlist"></p>
+          </div>
+          <div class="col-md-4">
+            <p class="field">Mobile No:</p>
+            <p class="value" id="mobileno"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="field">Address:</p>
+            <p class="value" id="address"></p>
+          </div>
+          <div class="col-md-3">
+            <p class="field">Roll No:</p>
+            <p class="value" id="rollno"></p>
+          </div>
+          <div class="col-md-3">
+            <p class="field">Father Name:</p>
+            <p class="value" id="fathername"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="field">Father Mobile No:</p>
+            <p class="value" id="fathermobile"></p>
+          </div>
+          <div class="col-md-3">
+            <p class="field">Mother Name:</p>
+            <p class="value" id="mothername"></p>
+          </div>
+          <div class="col-md-3">
+            <p class="field">Mother Mobile No:</p>
+            <p class="value" id="mothermobile"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      document.querySelector("#fname").textContent = urlParams.get('fname');
+      document.querySelector("#mname").textContent = urlParams.get('mname');
+      document.querySelector("#lname").textContent = urlParams.get('lname');
+      document.querySelector("#email").textContent = urlParams.get('email');
+      document.querySelector("#dob").textContent = urlParams.get('dob');
+      document.querySelector("#doa").textContent = urlParams.get('doa');
+      document.querySelector("#gender").textContent = urlParams.get('gender')
+      document.querySelector("#deptlist").textContent = urlParams.get('deptlist')
+      document.querySelector("#address").textContent = urlParams.get('address');
+      document.querySelector("#mobileno").textContent = urlParams.get('mobileno');
+      document.querySelector("#rollno").textContent = urlParams.get('rollno');
+      document.querySelector("#fathername").textContent = urlParams.get('fathername');
+      document.querySelector("#fathermobile").textContent = urlParams.get('fathermobile');
+      document.querySelector("#mothername").textContent = urlParams.get('mothername');
+      document.querySelector("#mothermobile").textContent = urlParams.get('mothermobile');
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
