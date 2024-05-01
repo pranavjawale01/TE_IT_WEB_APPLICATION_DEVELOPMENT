@@ -1,0 +1,32 @@
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+
+}
+
+.menu {
+    width: 20%;
+    background-color: rgb(149, 96, 76);
+}
+
+#logo {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 15px;
+    background-color: #000;
+} */
