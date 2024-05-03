@@ -1,0 +1,15 @@
+.conatainer {
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.conatainer .card {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
