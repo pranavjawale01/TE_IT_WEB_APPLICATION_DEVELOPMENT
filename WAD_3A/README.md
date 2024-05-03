@@ -1,5 +1,3 @@
-It looks like you're setting up a basic Express.js server and creating some files for a web application. Here are the steps you've outlined:
-
 1. Initialize a new npm project:
    ```
    npm init
