@@ -46,7 +46,6 @@ db.profile.insertOne({name:'abc', email:'xyz@gmail.com', city:'pune'})
 Create a mongodb.js file and add the following content:
 
 ```bash
-javascript
 const { MongoClient } = require("mongodb");
 const url = "mongodb://localhost:27017";
 const database = "student";
