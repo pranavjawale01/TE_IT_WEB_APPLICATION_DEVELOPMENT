@@ -16,14 +16,16 @@ Before running the application, ensure you have the following installed:
 
 1. Initialize npm in your project directory:
 
-
+```bash
 npm init
+```
 
 
 2. Install required npm packages:
 
-
+```bash
 npm i mongodb express
+```
 
 
 ## Setting Up MongoDB
@@ -31,17 +33,19 @@ npm i mongodb express
 1. Open MongoDB Compass and connect to your MongoDB server.
 2. In the Compass terminal, execute the following commands:
 
-
+```bash
 show databases
 use student
 db.createCollection('profile')
 db.profile.insertOne({name:'abc', email:'xyz@gmail.com', city:'pune'})
+```
 
 
 ## MongoDB Configuration
 
 Create a mongodb.js file and add the following content:
 
+```bash
 javascript
 const { MongoClient } = require("mongodb");
 const url = "mongodb://localhost:27017";
@@ -55,13 +59,14 @@ const dbConnect = async () => {
 }
 
 module.exports = dbConnect;
+```
 
 
 ## Running the Application
 
 1. Create an index.js file and add the following content:
 
-javascript
+```bash
 const dbConnect = require('./mongodb');
 const express = require('express');
 const app = express();
@@ -97,12 +102,14 @@ app.delete('/:name', async (req, res) => {
 
 app.listen(3000);
 console.log("Connected to DB");
+```
 
 
 2. Run the application:
 
-
+```bash
 node index.js
+```
 
 
 ## Usage
